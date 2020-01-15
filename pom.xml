@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>fr.unice.polytech.si3.qgl</groupId> <!-- CHANGE ME -->
+	<groupId>fr.unice.polytech.si3.qgl</groupId>
 	<artifactId>teamid</artifactId> <!-- CHANGE ME -->
 	<version>0.1-SNAPSHOT</version> <!-- CHANGE ME -->
 
@@ -28,6 +28,13 @@
 	</build>
 
 	<dependencies>
+		<!-- Interface with referee /!\ do not touch !!! -->
+		<dependency>
+			<groupId>fr.unice.polytech.si3.qgl</groupId>
+			<artifactId>regatta.cockpit</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Serialization -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -56,4 +63,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+		  <id>io-labs-snapshots</id>
+		  <url>https://nexus.io-labs.fr/repository/maven-snapshots/</url>
+		</repository>
+	</repositories>
 </project>
