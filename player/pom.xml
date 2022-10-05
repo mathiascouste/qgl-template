@@ -14,7 +14,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<junit.jupiter.version>5.8.0</junit.jupiter.version>
 		<mockito.version>3.12.4</mockito.version>
-		<jackson.databind.version>2.13.1</jackson.databind.version>
+		<jackson.databind.version>2.13.2.1</jackson.databind.version>
 	</properties>
 
 	<build>
